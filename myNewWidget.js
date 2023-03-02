@@ -12,7 +12,8 @@ myNewWidgetIntrovertIntr = function() {
 
   // вызывается каждый раз при переходе на страницу
   this.render = function() {
-let pipelineHeaders = document.querySelector('div.pipeline_wrapper.pipeline_row').querySelectorAll('.pipeline_status__head') || document.querySelector('div.digital-pipeline__row_header').querySelectorAll('.pipeline_status__head')
+let pipelineHeadersWrapper = document.querySelector('div.pipeline_wrapper.pipeline_row') || document.querySelector('div.digital-pipeline__row_header')
+let pipelineHeaders = pipelineHeadersWrapper.querySelectorAll('.pipeline_status__head')
 pipelineHeaders .forEach(pipelineHeader => {pipelineHeader.querySelector('.pipeline_status__head_title').style.color = pipelineHeader.querySelector('.pipeline_status__head_line').style.color} )  
   };
 
