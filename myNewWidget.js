@@ -40,6 +40,6 @@ pipelineHeaders .forEach(pipelineHeader => {pipelineHeader.querySelector('.pipel
 };
 // создание экземпляра виджета и регистрация в системных переменных Yadra
 // widget-name - ИД и widgetNameIntr - уникальные названия виджета
-yadroWidget.widgets['myNewWidget-Introvert'] = new myNewWidgerIntrovertIntr();
+yadroWidget.widgets['myNewWidget-Introvert'] = new myNewWidgetIntrovertIntr();
 yadroWidget.widgets['myNewWidget-Introvert'].bootstrap('myNewWidget-Introvert');
 
